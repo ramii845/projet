@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <link href="projet.css" rel="stylesheet">  
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<title>mon projet</title>
+ <script src="projet.js" type="text/javascript"></script>
+</head>
+<body onload="Temps()">
+    <form on name="f">
+    <textarea type="text" name="date"></textarea>
+    </form>
+    <div id="slider">
+        <img src="image5.jpg" id="img"/>
+        <div class="entete_titre">
+            <h1>COVID-19</h1>
+            Restez<strong>chez vous</strong>2021
+            <div id="rs"> 
+            </div>
+            </div>
+        <div id="btn_left"> <img src="butonL.jpg" class="left" onclick="slider(1)"/></div>
+        <div id="btn_right"><img src="butonR.png"class="right" onclick="slider(1)"/> </div>
+    </div>
+    <!----------------ici notre menu-------------->
+    <div id="menu">
+    <ul>
+        <li><a href="https://www.worldometers.info/coronavirus/country/tunisia/">COVID-19 A TUNISE </a> </li>
+         <li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj3ueTHxpTxAhUQtNUKHbMCAhUYABAAGgJ3cw&ae=2&ohost=www.google.com&cid=CAESQOD2ra-ChaZNr6zD2u7S8--suRxBZyuBO-uJnwZBsO_iHFNyLCDlvEBwz-oK8v5EKtzLoMP9-gfKtrBZ3rGPEKY&sig=AOD64_2SGqpePnKKCk63odHgWUTPtf_pkg&q&nis=1&adurl&ved=2ahUKEwi92dzHxpTxAhUB1BoKHd5ZC6YQ0Qx6BAgCEAE">Contact</a> </li>
+         <li><a href="https://www.worldometers.info/coronavirus/">news</a> </li>
+        <li style="float : right"><a href="https://fr.statista.com/statistiques/1091585/morts-infections-coronavirus-monde/" class="active">Connexion</a> </li>
+        
+        </ul>    
+    </div>
+    <div id="contenu">
+        <div class="titre_section" id="para"> LE CORONAVIRUS,QU'EST-CE QUE C'EST ?</div>
+        <p>Le coronavirus 2019 (que l'on appelle aussi Covid-19 ou SARS-CoV-2) est une maladie infectieuse causée par le coronavirus SARS-CoV-2 appartenant à la très large famille des Coronaviridae. Ces virus sont en constante mutation et évolution. C'est au cours de l'une de ces mutations qu'il est devenu capable d'infecter l'homme.</p>
+          <div class="titre_section" id="para"> LES SYMPTOMES</div>
+        <p id="asym">les personnes touchéé peuvent ressentir les symptomes suivant</p>
+            <div id="parent-col">
+        <div class="colonne">
+            <img src="sym3.jpg" class="image" style="width: 100%; ">
+            <div class="middle">
+                <div class="text">Fievre</div>
+            </div>
+        </div>
+        <div class="colonne">
+            <img src="sym5.jpg" class="image" style="width: 100%;">
+            <div class="middle">
+                <div class="text">toux séche</div>
+            </div>
+        </div>
+        <div class="colonne">
+            <img src="sym4.jpg" class="image" style="width: 100%;">
+            <div class="middle">
+                <div class="text">Difficulté Respiratoires </div>
+            </div>
+        </div>
+    </div>  
+    </div>   
+    <!------------formulaire newsletter---------------------->
+    <div class="inscription_boite">
+    <h2>Abonnez-vous a notre liste de diffusion</h2>
+    <form name="inscription">
+        <input type="email" placeholder="exemple@exemple.com" required autocomplete="off">
+        <button type="submit"><span>Inscription</span></button>
+        
+        </form>
+    
+    </div>
+    <div class="footer">
+        <h2 id="corona">CORONA VIRUS</h2>
+       <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-twitter fa-2x"></i>
+<i class="fa fa-facebook-f fa-2x"></i>
+<i class="fa fa-instagram fa-2x"></i>
+<i class="fa fa-pinterest fa-2x"></i>
+        
+    </div>
+    </body>
+</html>
+    
+    
+     

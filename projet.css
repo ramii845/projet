@@ -1,0 +1,276 @@
+body,html{
+    margin:0;
+    padding: 0;
+    font-family: "lucida grande","lucida sans unicode","verdana","sans-serif";
+    box-sizing: border-box;
+}
+#slider{
+    background-color:#ccc;
+    width: 100%;
+    height: 555px;
+    position: relative;
+}
+#img{
+    width: 100%;
+    height: 550px;
+    position: absolute;
+}
+#btn_left{
+    height: 550px;
+    width: 100px;
+    left:0px;
+    top: 0px;
+    position: absolute;
+}
+#btn_right{
+    height: 550px;
+    width: 100px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+.left{
+     position:absolute;
+    top:40%;
+    left:10px;
+    width: 60px;
+    height:70px;
+    opacity: 0.4;
+}
+.left:hover{
+    opacity: 1;
+}
+.right{
+  position: absolute;
+    top:40%;
+    right: 60px;
+    width:60px;
+    height:70px;
+    opacity: 0.4;
+}
+.right:hover{
+    opacity: 1;
+}
+/*------------ici style de titre---------*/
+.entete_titre{
+  background: #F00A3C;
+ text-align: center;
+ color:#F7F6F6;
+ padding:40px;
+    position:absolute;
+    top:60%;
+    line-height: normal;
+}
+.entete_titre h1{
+ font-size: 40px;
+    line-height: normal;
+}
+#rs{
+    position: absolute;
+    text-align: center;
+}
+/*--------------- ici notre menu---------*/*
+#menu{
+    background-color:#333;
+    position:sticky;
+    top:0;
+    overflow:hidden;
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li{
+    float: left;
+}
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+li a:hover:not(.active){
+    background-color: #F00A3c;
+}
+.active{
+     background-color: #F00A3c;
+}
+/*---------------contenuu-------*/
+#contenu{
+  width: 90%;
+ margin-left: auto;
+    margin-right: auto;
+    border-bottom-width: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+.titre_section{
+    font-size: 26px;
+    width: 90%;
+    margin-top: 20px;
+    color:#676162;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+}
+p{
+    text-align: justify;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #313030;
+}
+/*start section colonne*/
+/*
+.colonne {
+    width: 30%;
+}
+*/
+.colonne{
+    position: relative;
+    float: left;
+    width: 30%;
+    min-height: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+div#parent-col {
+    display: flex;
+    justify-content: space-around;
+}
+.image{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 300px;
+    transition: 0,5s ease;
+    backface-visibility: hidden;
+}
+.middle{
+    transition:0,5s, ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#para{
+    text-align: center;
+font-weight: bold;
+color: darksalmon
+}
+#asym{
+    text-align: center;
+}
+.text{
+    position: relative;
+    background: #F00a3c;
+    color:#fcfbfb;
+    font-size: 16px;
+    padding: 16px 16px;
+    cursor: pointer;
+}
+.colonne:hover .middle{
+    opacity:1;
+}
+/*
+.colonne:hover ..middle{
+    opacity: 1;
+}
+*/
+/*start section inscri*/
+input[type="email"] {
+    width: 200px !important;
+    padding: 17px !important;
+}
+.inscription_boite button {
+    padding: 17px !important;
+    color: white !important;
+    background-color: red !important;
+}
+.inscription_boite{
+    font-family: "sans-serif";
+    padding: 6% 0;
+    text-align: center;
+    clear: left;
+}
+.inscription_boite h2{
+    margin: 0 0 1% 0;
+    font-weight: 100;
+    font-size: 30px; 
+}
+.inscription_boite.inscription{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+.inscription_boite .inscription input{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #f00a3c;
+    padding: 1% 0 1% 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.5;
+    color: aliceblue;
+    outline: none;
+}
+.inscription_boite .inscription button{
+    margin-top: 3%;
+    background-color: transparent;
+    border: 2px solid #f00a3c;
+    border-radius: 50px;
+    padding: 10px 40px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    position: relative;
+    transition: 2s;
+}
+.inscription_boite .inscription button:hover{
+    color: #f00a3c;
+    padding: 10px 40px;
+    transition: 2s;
+}
+/*end section inscri*/
+.footer{
+  text-align: center;
+    padding: 40px;
+    bottom: 0;
+    margin-top: auto;
+    background-color: #000;
+}
+.footer h2{
+    color: #FFFFFF; 
+}
+.sociaux{
+    margin: 5px;
+}
+
+i.fa.fa-facebook-f.fa-2x ,i.fa.fa-twitter.fa-2x ,i.fa.fa-instagram.fa-2x,i.fa.fa-pinterest.fa-2x{
+    color: white;
+    margin-right: 10px;
+}
+i.fa.fa-facebook-f.fa-2x:hover ,i.fa.fa-twitter.fa-2x:hover ,i.fa.fa-instagram.fa-2x:hover,i.fa.fa-pinterest.fa-2x:hover{
+    color: red;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
